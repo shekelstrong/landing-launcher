@@ -54,9 +54,12 @@ async def run(product: str, audience: str, tone: str = "professional") -> dict:
     subhead = template["subhead"].format(
         product=product_clean,
         audience=audience_clean,
-        value_prop="автоматизации рутины",
+        value_prop="автоматизации",
         pain_point="рутина",
         time_result="5 минут",
+        big_claim="Увеличение продаж на 30%",
+        short_time="1 день",
+        objection="программистов",
     )
 
     return {
